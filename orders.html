@@ -1,0 +1,152 @@
+<!--
+ SIT104 Introduction to Web Development
+ Assignment 1 & Assignment 2 - Part 1
+ Aaron Pethybridge #217561644
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta tags - keywords tailored for each page -->
+<meta charset="utf-8">
+<meta name="description" content="BooksRUS. Best Secondhand Book Shop in Geelong.">
+<meta name="keywords" content="BooksRUS, books, secondhand, geelong, best, Moorabool, order, delivery, payment, contact">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Aaron Pethybridge Student# 217561644">
+<title>Orders - BooksRUs</title>
+<link href="booksrus.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="orderformvalidate.js"></script> <!-- Javascript code in external file -->
+</head>
+<body>
+	<div id="container"> <!-- Page container -->
+		<div id="header"> <!-- Heading container -->
+			<a class="headeranchor" href="ass1.html">
+			<span id="banner"><span id="bannerbooks">Books</span>R<span id="bannerus">Us</span></span><br />
+			<span id="blurb">Best Secondhand Book Shop in Geelong.</span>
+			</a>		
+		</div>
+		<div id="nav"><!-- Navigation container -->
+			<a href="ass1.html"><span>Home</span></a>
+			<a href="books.html"><span>Books</span></a>
+			<a href="orders.html"><span id="currentpage">Orders</span></a>
+			<a href="faqhelp.html"><span>FAQ / Help</span></a>
+			<a href="contact.html"><span>Contact</span></a>
+			<a href="search.html"><span>Search</span></a>
+		</div>
+		<div id="contents"> <!-- Contents container -->
+			<br />
+			<br />
+			<h1>Place an Order</h1>&nbsp;&nbsp;<span>* required field</span><br /><br />
+			<div id="ordersformholder"> <!-- Orders form container -->
+				<form id="ordersform" name="ordersform" onsubmit="return validateForm(ordersform)" action="processorder.php" method="POST">
+					 <fieldset id="ordersinfoset"> <!-- Use fieldset to visually bound specific book order info -->
+						<legend class="orderslegend">Book Order Information</legend><br />
+						<!--<textarea id="ordersinfo" name="ordersinfo" onfocus="clearTextArea(ordersinfo);" rows="10" cols="40">Book title, author, ISBN (if known), order quantity ...</textarea>-->
+						<table class="orderstable">
+						<tr>
+							<td>Book Title*:<br /><input id="orderstitle" name="orderstitle" type="text" size="30"></td>
+						</tr>
+						<tr>
+							<td>Author*:<br /><input id="ordersauthor" name="ordersauthor" type="text" size="30"></td>
+						</tr>
+						<tr>
+							<td>ISBN*:<br /><input id="ordersisbn" name="ordersisbn" type="text" value="978XXXXXXXXXX" maxlength="13" size="15"><br />Please enter 13 digit ISBN.</td>
+						</tr>
+						<tr>
+							<td>Quantity*:<br /><select id="ordersquantity" name="ordersquantity">
+								<script type="text/javascript">fillOrderQuantity();</script>
+								</select>
+							</td>
+						</tr>
+						</table>
+					</fieldset>
+					<fieldset id="orderscustset"> <!-- Holds purchaser contact info -->
+						<legend class="orderslegend">Your contact details</legend><br />
+						<table class="orderstable">
+						<tr>
+							<td>Name*:<br /><input id="orderscustname" name="orderscustname" type="text" size="30"></td>
+						</tr>
+						<tr>	
+							<td>* Enter either phone or mobile no.<br /></td>
+						</tr>
+						<tr>	
+							<td>Contact Phone No.:<br /><input id="orderscustphone" name="orderscustphone" type="text" size="20">&nbsp;eg. 0310102222</td>
+						</tr>
+						<tr>	
+							<td>Contact Mobile No.:<br /><input id="orderscustmobile" name="orderscustmobile" type="text" size="20">&nbsp;eg. 0400111222</td>
+						</tr>
+						<tr>
+							<td>Email*:<br /><input id="orderscustemail" name="orderscustemail" type="text" size="30"></td>
+						</tr>
+						</table>
+					</fieldset>
+					<fieldset id="ordersdeliveryset"> <!-- Holds delivery info -->
+						<legend class="orderslegend">Your delivery details</legend><br />
+						<table class="orderstable">
+						<tr>
+							<td>Unit / Street Number*:<br /><input id="ordersdeliveryno" name="ordersdeliveryno" type="text" size="10">&nbsp;eg. 6/10, or 10</td>
+						</tr>
+						<tr>	
+							<td>Street Name*:<br /><input id="ordersdeliverystreet" name="ordersdeliverystreet" type="text" value="eg. Main Road" size="30"></td>
+						</tr>
+						<tr>
+							<td>City*:<br /><input id="ordersdeliverycity" name="ordersdeliverycity" type="text" size="30"></td>
+						</tr>
+						<tr> <!-- Used input type here, instead of select type in case delivery is outside of Australia -->
+							<td>State*:<br /><input id="ordersdeliverystate" name="ordersdeliverystate" type="text" size="20"></td>
+						</tr>
+						<tr>
+							<td>Postcode*:<br /><input id="ordersdeliverypost" name="ordersdeliverypost" type="text" size="10"></td>
+						</tr>
+						<tr>
+							<td>Country*:<br /><input id="ordersdeliverycountry" name="ordersdeliverycountry" type="text" size="20" value="Australia"></td>
+						</tr>
+						</table>
+					</fieldset>
+					<fieldset id="orderspayset"> <!-- Holds payment info -->
+						<legend class="orderslegend">Your payment details</legend><br />
+						<table class="orderstable">
+						<tr>
+							<td>Card type*:<br /> <!-- 3 credit card types assigned -->
+								<select id="orderspaytype" name="orderspaytype">
+									<option value="Visa">Visa</option>
+									<option value="Mastercard">Mastercard</option>
+									<option value="AMEX">AMEX</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Cardholder Name*:<br /><input id="orderspayname" name="orderspayname" type="text" size="30"></td>
+						</tr>
+						<tr>	
+							<td>Credit Card No.*:&nbsp;(All digits, no spaces.)<br /><input id="orderspaycard" name="orderspaycard" type="text" size="25"></td>
+						</tr>
+						<tr>
+							<td>Credit Card Expiry*:<br /><fieldset id="orderspayexpiry">
+								Month
+								<select id="orderspayexpirymonth" name="orderspayexpirymonth">
+									<script type="text/javascript">fillMonthDate();</script>
+								</select>&nbsp;&nbsp;&nbsp;&nbsp;
+								Year
+								<select id="orderspayexpiryyear" name="orderspayexpiryyear">
+									<script type="text/javascript">fillYearDate();</script>
+								</select>
+								</fieldset>
+							</td>
+						</tr>
+						<tr>
+							<td>CCV*:<br /><input id="orderspayccv" name="orderspayccv" type="text" maxlength="3" size="3">&nbsp;&nbsp;* 3 digit no. on back of card.</td>
+						</tr>
+						</table>
+						<input name="orderssubmit" type="submit" value="Place Order">
+						<input name="ordersreset" type="reset" value="Reset">
+					</fieldset>
+				</form>	
+			</div>
+		</div>
+		<div id="footer"> <!-- Footer container -->
+			©Deakin University, School of Information Technology.<br /> This web page has been developed as a student assignment for the unit SIT104: Introduction to Web Development.<br />Therefore it is not part of the University's authorised web site. DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN ANY WAY.
+		</div>
+	</div>
+
+</body>
+</html>

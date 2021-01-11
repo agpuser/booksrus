@@ -1,0 +1,441 @@
+/*
+ SIT104 Introduction to Web Development
+ Assignment 1
+ Aaron Pethybridge #217561644
+ */
+
+/* Main page structure elements */
+body {
+	margin: 0;
+	padding:0;
+	min-width:600px;
+	background-color: #fbfcf2
+}
+
+h1 {
+	font-family: "Arial", Sans;
+	font-size: 18pt;
+	margin: 0px;
+	color:#5f6163;
+}
+#container {
+	background-color: #fbfcf2;
+	width: 100%;
+	margin: 0 auto;
+	font-family: "Arial", Sans;
+}
+
+#main {
+	background-color: #fbfcf2;
+	margin: 0px;
+}
+
+table {
+	margin: 0;
+	padding: 0;
+}
+
+input[type=text] {
+	font-size: 13pt;
+}
+
+input[type=submit], input[type=reset] {
+	font-size: 12pt;
+	background-color: #173360;
+	color: #ffffff;
+	text-decoration: none;
+	margin: 10px 10px 0 0;
+	padding: 5px 10px;
+}
+
+textarea {
+	resize: none;
+	font-size: 12pt;
+	font-family: "Arial", Sans;
+}
+
+/* Heading elements */
+#banner {
+	font-family: "Arial", Sans;
+	font-size: 56pt;
+	color: #fbfcf2;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	/*vertical-align: bottom;*/
+}
+
+#banner #bannerbooks {
+ 	font-weight: bold;
+}
+
+#banner #bannerus {
+ 	font-weight: bold;
+	font-style: italic;
+}
+
+#header {
+	background-image: linear-gradient(to left,#173360,#07101e);
+	padding: 60px 50px 10px 50px;
+	margin: 0;
+}
+
+#blurb {
+	color: #ffce2d;
+	font-size: 12pt;
+	text-transform: uppercase;
+	padding: 10px 0 10px 0;
+}
+
+.headeranchor {
+	text-decoration: none;
+}
+
+/* Navigation elements */
+#nav {
+	background-color: #ffce2d;
+	text-align: left;
+	color: #392613;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 10px 50px 10px 50px;
+	margin: 0;
+}
+
+#nav span {
+	padding: 10px 10px 10px 10px;
+}
+
+#currentpage {
+	background-color: #173360;
+	color: #fbfcf2;
+	text-decoration: none;
+}
+
+#nav a:link, a:visited {
+	color: #173360;
+	text-decoration: none;
+	padding: 10px 0 10px 0;
+}
+
+#nav a:hover {
+	background-color: #173360;
+	color: #ffce2d;
+	text-decoration: none;
+	padding: 10px 0 10px 0;
+}
+
+/* Content elements */
+#contents {
+	padding: 0 50px 0 50px;
+	/*overflow: auto;*/
+	margin: 0px;
+	font-size: 12pt;
+	color:#5f6163;
+	width: 80%;
+}
+
+.highlight {
+	font-weight: bold;
+}
+
+/* FAQ Page Description elements */
+dt {
+	font-weight: bold;
+	font-size: 12pt;
+	margin: 0 0 10px 0;
+}
+
+dd {
+	font-size: 12pt;
+	padding: 0 20px 20px 0;
+}
+
+/* Contact Page Description elements */
+#contacttable {
+	border: 0px solid black;
+	font-size: 14pt;
+	width: 60%;
+}
+
+#contacttable #contactdetails {
+	border: 0px solid black;
+	width: 65%;
+	padding: 0 20px 20px 0;
+	vertical-align: top;
+}
+
+#contacttable #contacthours {
+	border: 0px solid black;
+	width: 35%;
+	padding: 0 20px 20px 0;
+	vertical-align: top;
+}
+
+#contactformholder {
+	width: 55%;
+	margin: 0 0 40px 0;
+}
+
+#contactlegend {
+	font-weight: bold;
+}
+
+#contactname, #contactemail {
+	font-weight: normal;
+}
+
+/* Search Page elements */
+#searchtable {
+	border: 0px solid black;
+	font-size: 14pt;
+	text-align: left;
+	width: 80%;
+	margin: 0 0 20px 0;
+}
+
+#searchtable td {
+	border: 0px solid black;
+	padding: 10px 20px 10px 0;
+	vertical-align: middle;
+}
+
+#searchformholder {
+	width: 60%;
+	margin: 0 0 40px 0;
+}
+
+/* Orders Page elements */
+.orderstable {
+	border: 0 solid black;
+	font-size: 12pt;
+	text-align: left;
+	width: 60%;
+	margin: 0 0 0 0;
+}
+
+.orderstable td {
+	border: 0px solid black;
+	padding: 10px 20px 10px 0;
+	vertical-align: middle;
+}
+
+.orderslegend {
+	font-weight: bold;
+}
+
+/*#orderspaytype {
+	font-size: 12pt;
+	font-family: "Arial", Sans;
+	background-color: #fbfcf2;
+}*/
+
+#orderspaytype option {
+	font-size: 12pt;
+	font-family: "Arial", Sans;
+	background-color: #fbfcf2;
+}
+
+#orderscustset, #ordersdeliveryset, #orderspayset {
+	margin: 20px 0 0 0;
+}
+
+#ordersformholder {
+	width: 60%;
+	margin: 0 0 40px 0;
+}
+
+.ordersresults {
+	font-weight: bold;
+	margin: 0 20px 0 0;
+}
+
+.searchresultstable {
+	border: 0px solid red;
+	font-size: 12pt;
+	text-align: left;
+	width: 100%;
+	margin: 0 0 0 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.searchresultstitle {
+	border: 0px solid red;
+	font-size: 11pt;
+	background-color: #173360;
+	color: #ffffff;
+	margin: 0;
+	padding: 10px 20px 10px 20px;
+	vertical-align: middle;
+}
+
+.searchresultseven {
+	border: 0px solid red;
+	background-color: #e4e8e3;
+	color: #000000;
+	margin: 0 0 0 0;
+	padding: 10px 20px 10px 20px;
+	vertical-align: middle;
+}
+
+.searchresultsodd {
+	border: 0px solid red;
+	background-color: #cdd4d5;
+	color: #000000;
+	margin: 0 0 0 0;
+	padding: 10px 20px 10px 20px;
+	vertical-align: middle;
+}
+
+
+/* Books Page elements */
+.bookstable {
+	border: 0px solid black;
+	font-size: 12pt;
+	text-align: left;
+	width: 70%;
+	margin: 0 0 0 0;
+}
+
+.bookstable td {
+	border: 0px solid black;
+	padding: 10px 20px 10px 0;
+	vertical-align: middle;
+}
+
+.bookstable .bookstype {
+	margin: 0;
+	padding: 0 0 0 20px;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.bookstable .booksinfo td {
+	border: 0px solid black;
+	padding: 20px 20px 20px 20px;
+	vertical-align: top;
+}
+
+.bookstable .booksinfo .booksinfodesctd {
+	border: 0px solid black;
+	padding: 20px 20px 0 20px;
+	vertical-align: top;
+}
+
+.bookstable .booksinfo .booksinfoimgtd {
+	border: 0px solid black;
+	padding: 20px 20px 0 20px;
+	vertical-align: top;
+	font-size: 9pt;
+	width: 20%;
+	text-align: center;
+}
+
+.bookstable .booksinfo .booksinfonotestd {
+	border: 0px solid black;
+	padding: 20px 0 0 0;
+	vertical-align: top;
+	width: 80%;
+}
+
+.bookstable .booksinfo .booksinfodetailstd {
+	border: 0px solid black;
+	padding: 0 20px 0 20px;
+	vertical-align: top;
+	width: 40%;
+}
+
+.bookstable .booksinfo .booksanchor {
+	text-align: right;
+	margin: 0;
+	padding: 0 0 20px 0;
+	border: 0px solid black;
+}
+
+.bookstable .booksinfo .hoverspan {
+	margin: 0;
+	padding: 0;
+}
+
+.booksimg {
+	margin: 0px;
+	padding: 0px;
+}
+
+.bookstitle {
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+.bookssub {
+	font-weight: bold;
+	font-size: 14pt;
+}
+
+.booksprice {
+	font-weight: bold;
+	font-size: 16pt;
+}
+
+.booksbold {
+	font-weight: bold;
+}
+
+.bookscat {
+	padding: 0 0 0 20px;
+}
+
+/* News container elements */
+#news {
+	background-image: linear-gradient(to bottom,#ffce2d,#fbfcf2);
+	padding: 0px 20px 0px 20px;
+	width:20%;
+	float: right;
+	margin: 20px 20px 20px 50px;
+	border: 0px solid #ffce2d;
+  	border-radius: 0px;
+	text-align: center;
+	color:#173360;
+}
+
+#news span.newstitle {
+	font-size: 12pt;
+	font-weight: bold
+}
+
+#news span.newstext {
+	font-size: 11pt;
+}
+
+/* Footer Container */
+#footer {
+	background-color: #fbfcf2;
+	clear: both;
+	text-align: center;
+	font-family: "Arial", Sans;
+	font-size: 8pt;
+	margin: 0px;
+	padding: 20px 50px 20px 50px;
+	color:#5f6163;
+}
+
+/* Code used for hover over images on Books page */
+/* Code appropriated from:
+/* http://www.websitecodetutorials.com/code/photo-galleries/css-popup-image.php */
+/* then modified by myself */
+/* START */
+.thumbwrap { margin:0; padding: 0; width:150px; height:221px; }
+
+.thumb { float:left; /* must be floated for same cross browser position of larger image */ position:relative; margin:3px; }
+
+.thumb img { border:1px solid #000; vertical-align:bottom; }
+
+.thumb:hover { border:0; /* IE6 needs this to show large image */ z-index:1; }
+
+.thumb span { position:absolute; visibility:hidden; }
+
+.thumb:hover span { visibility:visible; padding: 30px 0 0 30px; }
+/* END */
+
+

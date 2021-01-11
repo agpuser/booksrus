@@ -1,0 +1,76 @@
+<!--
+ SIT104 Introduction to Web Development
+ Assignment 1
+ Aaron Pethybridge #217561644
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta tags - keywords tailored for each page -->
+<meta charset="utf-8">
+<meta name="description" content="BooksRUS. Best Secondhand Book Shop in Geelong.">
+<meta name="keywords" content="BooksRUS, books, secondhand, geelong, best, Moorabool, contact, phone, email, feedback">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Aaron Pethybridge Student# 217561644">
+<title>Contact - BooksRUs</title>
+<link href="booksrus.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="container"> <!-- Page container -->
+		<div id="header"> <!-- Heading container -->
+			<a class="headeranchor" href="ass1.html">
+			<span id="banner"><span id="bannerbooks">Books</span>R<span id="bannerus">Us</span></span><br />
+			<span id="blurb">Best Secondhand Book Shop in Geelong.</span>
+			</a>		
+		</div>
+		<div id="nav"><!-- Navigation container -->
+			<a href="ass1.html"><span>Home</span></a>
+			<a href="books.html"><span>Books</span></a>
+			<a href="orders.html"><span>Orders</span></a>
+			<a href="faqhelp.html"><span>FAQ / Help</span></a>
+			<a href="contact.html"><span id="currentpage">Contact</span></a>
+			<a href="search.html"><span>Search</span></a>
+		</div>
+		<div id="contents"> <!-- Contents container -->
+			<br />
+			<br />
+			<h1>Contact</h1><br />
+			<table id="contacttable"> <!-- Contact details at top, easy to find -->
+				<tr>
+					<td id="contactdetails">
+						123 Moorabool Street<br />
+						Geelong, VIC 3220<br />
+						Tel: (03) 5244 1234<br />
+						Email: <a href="mailto:contact@BooksRUS.com.au">contact@BooksRUS.com.au</a><br />
+					</td>
+					<td id="contacthours">
+						Opening Hours:<br />9:00am ~ 6:00pm<br />Monday ~ Sunday
+					</td>
+				</tr>
+			</table>
+			<br />
+			<!-- Contact form, made easy to use, fieldset line to visually contain form elements -->
+			<div id="contactformholder"> <!-- Contact form holder -->
+				<form id="contactform" name="contactform" action="processemail.php" method="POST"> <!-- POST to hide contact details -->
+					 <fieldset id="contactset">
+						<legend id="contactlegend">Send us a message</legend><br />
+						Your name:<br />
+						<input id="contactname" name="contactname" type="text" size=30><br /><br />
+						Your email address:<br />
+						<input id="contactemail" name="contactemail" type="text" size=30><br /><br />
+						Your message:<br />
+						<textarea id="contactmsg" name="contactmsg" rows="10" cols="40"></textarea>
+						<br /><br />
+						<input name="contactsubmit" type="submit" value="Submit">
+						<input name="contactreset" type="reset" value="Reset">
+					</fieldset>
+				</form>	
+			</div>
+		</div>
+		<div id="footer"> <!-- Footer container -->
+			©Deakin University, School of Information Technology.<br /> This web page has been developed as a student assignment for the unit SIT104: Introduction to Web Development.<br />Therefore it is not part of the University's authorised web site. DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN ANY WAY.
+		</div>
+	</div>
+
+</body>
+</html>

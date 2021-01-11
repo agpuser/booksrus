@@ -1,0 +1,72 @@
+<!--
+ SIT104 Introduction to Web Development
+ Assignment 1
+ Aaron Pethybridge #217561644
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta tags - keywords tailored for each page -->
+<meta charset="utf-8">
+<meta name="description" content="BooksRUS. Best Secondhand Book Shop in Geelong.">
+<meta name="keywords" content="BooksRUS, books, secondhand, geelong, best, Moorabool, search, keyword, title, author, isbn">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Aaron Pethybridge Student# 217561644">
+<title>Search - BooksRUs</title>
+<link href="booksrus.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="container"> <!-- Page container -->
+		<div id="header"> <!-- Heading container -->
+			<a class="headeranchor" href="ass1.html">
+			<span id="banner"><span id="bannerbooks">Books</span>R<span id="bannerus">Us</span></span><br />
+			<span id="blurb">Best Secondhand Book Shop in Geelong.</span>
+			</a>		
+		</div>
+		<div id="nav"><!-- Navigation container -->
+			<a href="ass1.html"><span>Home</span></a>
+			<a href="books.html"><span>Books</span></a>
+			<a href="orders.html"><span>Orders</span></a>
+			<a href="faqhelp.html"><span>FAQ / Help</span></a>
+			<a href="contact.html"><span>Contact</span></a>
+			<a href="search.html"><span id="currentpage">Search</span></a>
+		</div>
+		<div id="contents"> <!-- Contents container -->
+			<br />
+			<br />
+			<h1>Search Book(s)</h1><br /> <!-- Search main pieces of book information -->
+			<div id="searchformholder"> <!-- Search form container -->
+				<form id="searchform" name="searchform" action="search.php" method="POST">
+					 <fieldset id="searchset"> <!-- Fieldset line to visually contain forme elements -->
+						<legend id="searchlegend"></legend><br />
+						<table id="searchtable"> <!-- Separate each input on its own line -->
+						<tr>	
+							<td>Title:</td>
+							<td><input id="searchtitle" name="searchtitle" type="text" size="30"></td>
+						</tr>
+						<tr>
+							<td>Author:</td>
+							<td><input id="searchauthor" name="searchauthor" type="text" size="30">&nbsp;&nbsp;eg. Neil Gaiman</td>
+						</tr>
+						<tr>
+							<td>ISBN:</td>
+							<td><input id="searchisbn" name="searchisbn" type="text" size="30"></td>
+						</tr>
+						<tr>
+							<td>Keyword:</td>
+							<td><input id="searchkeyword" name="searchkeyword" type="text" size="30"></td>
+						</tr>
+						</table>
+						<input name="searchsubmit" type="submit" value="Search">
+						<input name="searchreset" type="reset" value="Reset">
+					</fieldset>
+				</form>	
+			</div>
+		</div>
+		<div id="footer"> <!-- Footer container -->
+			©Deakin University, School of Information Technology.<br /> This web page has been developed as a student assignment for the unit SIT104: Introduction to Web Development.<br />Therefore it is not part of the University's authorised web site. DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN ANY WAY.
+		</div>
+	</div>
+
+</body>
+</html>

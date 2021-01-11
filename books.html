@@ -1,0 +1,388 @@
+ <!--
+ SIT104 Introduction to Web Development
+ Assignment 1
+ Aaron Pethybridge #217561644
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta tags - keywords tailored for each page -->
+<meta charset="utf-8">
+<meta name="description" content="BooksRUS. Best Secondhand Book Shop in Geelong.">
+<meta name="keywords" content="BooksRUS, books, secondhand, geelong, best, Moorabool, image, description, details, $, non-fiction, childrens, academic">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Aaron Pethybridge Student# 217561644">
+<title>Books - BooksRUs</title>
+<link href="booksrus.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <a id="top"></a> <!-- page top -->
+  <div id="container"> <!-- Page container -->
+   <div id="header"> <!-- Heading container -->
+    <a class="headeranchor" href="ass1.html">
+     <span id="banner"><span id="bannerbooks">Books</span>R<span id="bannerus">Us</span></span><br />
+     <span id="blurb">Best Secondhand Book Shop in Geelong.</span>
+    </a>		
+   </div>
+  <div id="nav"> <!-- Navigation container -->
+   <a href="ass1.html"><span>Home</span></a>
+   <a href="books.html"><span id="currentpage">Books</span></a>
+   <a href="orders.html"><span>Orders</span></a>
+   <a href="faqhelp.html"><span>FAQ / Help</span></a>
+   <a href="contact.html"><span>Contact</span></a>
+   <a href="search.html"><span>Search</span></a>
+  </div>
+  <div id="contents"> <!-- Contents container -->
+   <br />
+   <br />
+   <h1>Books</h1><br />
+   <div id="booksholder"> <!-- Books table container -->
+    <table class="bookstable"> <!-- Holds all books information -->
+     <tr>
+      <td class="bookstype">Non-Fiction</td> <!-- Book type sub-heading -->
+     </tr>
+     <tr>
+      <td>
+       <a id="lwol"></a> <!-- Link to top of book -->
+       <!-- Each book held in its own table within the overall books table to facilitate cleaner layout.	
+       	    Same structure used for all displayed book. See below. -->
+       <table class="booksinfo"> <!-- Holds image, details, description & category of a book -->
+        <tr>
+         <td class="booksinfoimgtd"><div class="thumbwrap"> <!-- Image hover over -->
+          <a class="thumb" href="#lwol"><img src="images/lwol.png" alt="Live Well On Less"><span><img src="images/lwol_large.png" width="340" height="500" alt="Live Well On Less Large"></span></a></div>
+         </td>
+         <td class="booksinfonotestd">
+          <span class="bookstitle">Live Well on Less</span><br />
+          <span class="bookssub">A Practical Guide to Running a Lean Household</span><br />
+          By: Jody Allen, rrp $24.99, now <span class="booksprice">$19.00</span><br />
+          Paperback<br />
+          Published: 27th May 2015<br />
+         </td>
+        </tr>
+        <tr>
+         <td class="booksinfodesctd" colspan="2">
+          <span class="booksbold">Description:</span><br />
+          <p>Live lean, not mean!</p>
+	  <p>Want to put your money on a diet and save hundreds of dollars?</p>
+	  <p>This book gives you the lowdown on spring-cleaning your finances so you can be frugal while still living well.
+	  Jody Allen, of Stay at Home Mum fame, will help you set up your household budget, get the best deals, and save money on everything from your car to your clothes.
+	  And with over 50 thrifty - but fabulous - recipes, you can be a cost cutter in the kitchen as well!</p>
+	  <p>Inside you'll find:<br />
+	  - A room-by-room guide to household economy<br />
+	  - Hints and tips for getting organised<br />
+	  - Ideas for turning leftovers into delicious family meals<br />
+	  - Inspring stories from other savvy mums<br />
+	  - Get sorted and start saving!<br /></p>
+	  <p><span class="booksbold">About the Author</span><br />
+	  Jody Allen was made redundant in 2011 while on maternity leave and pregnant with her second child, born 12 months after the first baby. She started her website, Stay at Home Mum, to share her money-saving experiences while her family lived on one wage and it has since become Australia's biggest mothers' network. Jody now connects with hundreds of thousands of women and has created a successful business. She started shopping, cooking and freezing in bulk to save time and money while still giving her family delicious nutritious meals. Jody lives in Gympie, Queensland, with her husband and two boys.</p>
+	 </td>
+	</tr>
+	<tr>
+	 <td class="booksinfodetailstd" colspan="2">
+	  <span class="booksbold">Product Details:</span><br />
+	  ISBN: 9780143799955<br />
+	  ISBN-10: 0143799959 <br />
+	  Audience: General<br />
+	  Format: Paperback<br />
+	  Language: English<br />
+	  Number Of Pages: 256<br />
+	  Published: 27th May 2015<br />
+	  Country of Publication: AU<br />
+	  Dimensions (cm): 22.6 x 15.5 x 1.6<br />
+	  Weight (kg): 0.226<br />
+	  <p>
+	  This product is categorised by:<br />
+	  &nbsp;&nbsp;&nbsp;Non-Fiction  »  Family & Health<br />
+	  &nbsp;&nbsp;&nbsp;Non-Fiction  »  Self-Help & Personal Development  »  Personal Finance<br />
+	  </p>
+	 </td>
+	</tr>
+	<tr>
+	 <td class="booksanchor" colspan="2"><a href="#top">top</a> <!-- Link to top of page -->
+	</tr>
+       </table>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <a id="erf"></a> <!-- Link to top of book -->
+	<table class="booksinfo"> <!-- Holds image, details, description & category of a book -->
+ 	 <tr>
+	  <td class="booksinfoimgtd"><div class="thumbwrap"> <!-- Image hover over -->
+		<a class="thumb" href="#erf"><img src="images/erf.png" alt="Eat Real Food"><span><img src="images/erf_large.png" width="330" height="500" alt="Eat Real Food Large"></span></a></div>
+	 </td>
+	 <td class="booksinfonotestd">
+	  <span class="bookstitle">Eat Real Food</span><br />
+	  <span class="bookssub">The Only Solution to Permanent Weight-Loss and Disease Prevention</span><br />
+	  By: David Gillespie, <span class="booksprice">$29.99</span><br />
+	 </td>
+	</tr>
+	<tr>
+	 <td class="booksinfodesctd" colspan="2">
+	 <span class="booksbold">Description:</span><br />
+	 <p>In the last 100 years, we've become fatter and sicker with millions of people developing serious diseases from diabetes to cancer. Health gurus confuse us with complex diets and expensive ingredients; food manufacturers load their products with addictive and destructive ingredients causing our increasing weight and declining health. But help is at hand. Health and consumer advocate David Gillespie shares the simple secret of weight loss and wellbeing: swap processed food for REAL FOOD.</p>
+
+	 <p>Eat Real Food features:<br />
+	 - An explanation of why diets don't work and provides a focus on what does<br />
+	 - Information on how to lose weight permanently, not just in the short-term<br />
+	 - Evidence-based science explaining the real culprits of ill health and weight gain<br />
+	 - Advice on how to read food labels<br />
+	 - Easy recipes to replace common processed items and meal plans that show how simple it is to shop, plan and cook Real Food<br />
+	 - Tips for lunchboxes, parties, and recipes for food kids actually like.<br /></p>
+	 <p>Eat Real Food is the safe, effective and cheap solution to lose weight and improve our health permanently.</p>
+	 </td>
+        </tr>
+        <tr>
+	 <td class="booksinfodetailstd" colspan="2">
+	 <span class="booksbold">Product Details:</span><br />
+	 ISBN: 9781743533017<br />
+	 ISBN-10: 1743533012 <br />
+	 Audience: General<br />
+	 Format: Paperback<br />
+	 Language: English<br />
+	 Number Of Pages: 336<br />
+	 Published: 1st April 2015<br />
+	 Publisher: Pan Macmillan Australia<br />
+	 Country of Publication: AU<br />
+	 Dimensions (cm): 23.1 x 15.5  x 2.5<br />
+	 Weight (kg): 0.47<br />
+	 <p>
+	 This product is categorised by:<br />
+	 &nbsp;&nbsp;&nbsp;Non-Fiction  »  Cooking, Food & Drink  »  Health & Wholefood Cookery<br />
+	 &nbsp;&nbsp;&nbsp;Non-Fiction  »  Family & Health  »  Fitness & Diet<br />
+	 &nbsp;&nbsp;&nbsp;Non-Fiction  »  Family & Health  »  Fitness & Diet  »  Diets & Dieting<br />
+	 </p>
+	 </td>
+       </tr>
+       <tr>
+        <td class="booksanchor" colspan="2"><a href="#top">top</a> <!-- Link to top of page -->
+       </tr>
+      </table>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <a id="ml"></a> <!-- Link to top of book -->
+       <table class="booksinfo"> <!-- Holds image, details, description & category of a book -->
+	<tr>
+	 <td class="booksinfoimgtd"><div class="thumbwrap"> <!-- Image hover over -->
+	 <a class="thumb" href="#ml"><img src="images/ml.png" alt="My Life"><span><img src="images/ml_large.png" width="318" height="500" alt="My Life Large"></span></a></div></td>
+	 <td class="booksinfonotestd">
+	 <span class="bookstitle">My Life</span><br />
+	 <span class="bookssub">It's a Long Story</span><br />
+	 By: Willie Nelson, <span class="booksprice">$32.99</span><br />
+	 Paperback<br />
+	 Published: 26th May 2015<br />
+	 </td>
+	</tr>
+	<tr>
+	 <td class="booksinfodesctd" colspan="2">
+	 <span class="booksbold">Description:</span><br />
+	 <p>The definitive autobiography of Willie Nelson</p>
+
+	 <p>This is the unvarnished, complete story of Willie Nelson's life, told in his distinct voice and leaving no moment or experience unturned, from Texas and Nashville to Hawaii and his legendary bus.</p>
+	 <p>Having recently turned 80, Nelson is ready to shine on a light on all aspects of his life, including his drive to write music, the women in his life, his collaborations, and his biggest lows and highs-from his bankruptcy to the founding of Farm Aid.</p>
+	 <p>An American icon who still tours the country and headlines music festivals, Willie Nelson and his music have found their way into the hearts and minds of fans the world over, winning ten Grammys and receiving the Kennedy Center Honors. Now it's time to hear the last word about his life-from the man himself.</p>
+	 <p><span class="booksbold">About the Author</span><br />
+	Willie Nelson is an American country music singer-songwriter, as well as an author, poet, actor, and activist. He was inducted in the Country Music Hall of Fame in 1993.</p>
+	 </td>
+	</tr>
+	<tr>
+	 <td class="booksinfodetailstd" colspan="2">
+	 <span class="booksbold">Product Details:</span><br />
+	 ISBN: 9780751561746<br />
+	 ISBN-10: 0751561746<br />
+	 Audience: General<br />
+	 Format: Paperback<br />
+	 Language: English<br />
+	 Number Of Pages: 400<br />
+	 Published: 26th May 2015<br />
+	 Publisher: Little, Brown Book Group<br />
+	 Country of Publication: GB<br />
+	 Dimensions (cm): 23.2 x 15.5  x 3.0<br />
+	 Weight (kg): 0.56<br />
+	 Edition Number: 1<br />
+	 <p>
+	 This product is categorised by:<br />
+	 &nbsp;&nbsp;&nbsp;Non-Fiction  »  Arts & Entertainment  »  Music  »  Individual Composers & Musicians<br />
+	 &nbsp;&nbsp;&nbsp;Non-Fiction  »  Arts & Entertainment  »  Music  »  Music Styles & Genres  »  Popular Music<br />
+	 &nbsp;&nbsp;&nbsp;Non-Fiction  »  Biographies & True Stories  »  Biographies  »  Arts & Entertainment Biographies  »  Arts & Entertainment Autobiographies<br />
+	 &nbsp;&nbsp;&nbsp;Non-Fiction  »  Biographies & True Stories  »  Biographies  »  Autobiographies<br />
+	 </p>
+	 </td>
+	</tr>
+	<tr>
+	 <td class="booksanchor" colspan="2"><a href="#top">top</a> <!-- Link to top of page -->
+	</tr>
+       </table>
+       </td>
+      </tr>
+      <tr>
+       <td class="bookstype">Childrens</td> <!-- Book type sub-heading -->
+      </tr>
+      <tr>
+       <td>
+       <a id="cr"></a> <!-- Link to top of book -->
+       <table class="booksinfo"> <!-- Holds image, details, description & category of a book -->
+        <tr>
+	 <td class="booksinfoimgtd"><div class="thumbwrap"> <!-- Image hover over -->
+	 <a class="thumb" href="#cr"><img src="images/cr.png" alt="Clementine Rose"><span><img src="images/cr_large.png" width="320" height="500" alt="Clementine Rose Large"></span></a></div></td>
+	 <td class="booksinfonotestd">
+	 <span class="bookstitle">Clementine Rose and the Birthday Emergency</span><br />
+	 <span class="bookssub">Clementine Rose : Book 10</span><br />
+	 By: Jacqueline Harvey, <span class="booksprice">$12.99</span><br />
+	 Paperback<br />
+	 Published: 1st July 2005<br />
+	 </td>
+	</tr>
+	<tr>
+	 <td class="booksinfodesctd" colspan="2">
+	 <span class="booksbold">Description:</span><br />
+	 <p>Will an unexpected emergency ruin Clementine's party plans?</p>
+	 <p>Clementine Rose is counting down the days until her birthday party. But first there's the school sports carnival to attend and a very special race to run. There's also the all-important party theme to decide on!</p>
+	 <p>Amid all the excitement, Lavender doesn't seem her usual self. A trip to the vet is in store, and now Clementine has butterflies in her tummy for all the wrong reasons. Will Lavender be able to attend the party? And why Aunt Violet is acting so mysteriously?</p>
+	 </td>
+	</tr>
+	<tr>
+	 <td class="booksinfodetailstd" colspan="2">
+	 <span class="booksbold">Product Details:</span><br />
+	 ISBN: 9780857985163<br />
+	 ISBN-10: 0857985167<br /> 
+	 Audience: Children<br />
+	 Format: Paperback<br /> 
+	 Language: English<br />
+	 Number Of Pages: 160<br />
+	 Published: 1st July 2015<br />
+	 Publisher: Random House Australia<br />
+	 Country of Publication: AU<br />
+	 Dimensions (cm): 19.7 x 13.2  x 1.3<br />
+	 Weight (kg): 0.15<br />
+	<p>
+	This product is categorised by:<br />
+	&nbsp;&nbsp;&nbsp; Children & Teenagers / Young Adults  »  Children's Fiction  »  General Fiction for Children & Teenagers<br />
+	</p>
+	</td>
+       </tr>
+       <tr>
+        <td class="booksanchor" colspan="2"><a href="#top">top</a> <!-- Link to top of page -->
+       </tr>
+      </table>
+      </td>
+     </tr>
+     <tr>
+      <td>
+      <a id="ms"></a> <!-- Link to top of book -->
+       <table class="booksinfo"> <!-- Holds image, details, description & category of a book -->
+	<tr>
+	 <td class="booksinfoimgtd"><div class="thumbwrap"> <!-- Image hover over -->
+	 <a class="thumb" href="#ms"><img src="images/ms.png" alt="Just My Rotten Luck"><span><img src="images/ms_large.png" width="344" height="500" alt="Just My Rotten Luck Large"></span></a></div></td>
+	 <td class="booksinfonotestd">
+	 <span class="bookstitle">Middle School : Just My Rotten Luck</span><br />
+	 <span class="bookssub">Middle School : Book 7</span><br />
+	 By: James Patterson, <span class="booksprice">$15.99</span><br />
+	 Paperback<br />
+	 Published: 1st July 2015<br />
+	</td>
+       </tr>
+       <tr>
+	<td class="booksinfodesctd" colspan="2">
+	<span class="booksbold">Description:</span><br />
+	<p>The seventh novel in James Patterson's bestselling Middle School series</p>
+	<p>In this seventh Middle School episode, Rafe heads back to the place his misadventures began: the dreaded Hills Village Middle School, where he's now being forced to take 'special' classes... He also finds himself joining the school's football team – alongside his main tormenter, Miller the Killer!</p>
+	<p>But Rafe has grand plans for a better year: First, he decides to start a super-secret art project that's sure to rock the school. Then, if Rafe manages to make a play to save his team, he might have to deal with something completely new: popularity!</p>
+	</td>
+      </tr>
+      <tr>
+	<td class="booksinfodetailstd" colspan="2">
+	<span class="booksbold">Product Details:</span><br />
+	ISBN: 9780099596455<br />
+	ISBN-10: 0099596458<br />
+	Series: Middle School<br />
+	Audience: Children<br />
+	For Ages: 9 - 12 years old<br />
+	Format: Paperback<br />
+	Language: English<br />
+	Number Of Pages: 320<br />
+	Published: 1st July 2015<br />
+	Publisher: Cornerstone<br />
+	Country of Publication: GB<br />
+	Dimensions (cm): 19.4 x 13.6  x 2.5<br /> 
+	Weight (kg): 0.27<br />
+	<p>
+	This product is categorised by:<br />
+	&nbsp;&nbsp;&nbsp; Children & Teenagers / Young Adults  »  Children's Fiction  »  General Fiction for Children & Teenagers<br />
+	</p>
+	</td>
+       </tr>
+       <tr>
+       <td class="booksanchor" colspan="2"><a href="#top">top</a> <!-- Link to top of page -->
+      </tr>
+     </table>
+     </td>
+    </tr>
+    <tr>
+     <td class="bookstype">Academic</td> <!-- Book type sub-heading -->
+    </tr>
+    <tr>
+     <td>
+      <a id="dl"></a> <!-- Link to top of book -->
+      <table class="booksinfo"> <!-- Holds image, details, description & category of a book -->
+      <tr>
+       <td class="booksinfoimgtd"><div class="thumbwrap"> <!-- Image hover over -->
+       <a class="thumb" href="#dl"><img src="images/itsc.png" alt="Intro. to Computational Science"><span><img src="images/itsc_large.png" width="291" height="400" alt="Intro. to Computational Science Large"></span></a></div>
+       </td>
+       <td class="booksinfonotestd">
+       <span class="bookstitle">Introduction to Computational Science</span><br />
+       <span class="bookssub">Modeling and Simulation for the Sciences</span><br />
+       By: Angela B. Shiflet, George W. Shiflet, rrp $142.75, now <span class="booksprice">$132.75</span><br />
+       Hardcover<br />
+       Published: 2nd May 2006<br />
+       </td>
+      </tr>
+      <tr>
+       <td class="booksinfodesctd" colspan="2">
+       <span class="booksbold">Description:</span><br />
+	<p>Computational science is a quickly emerging field at the intersection of the sciences, computer science, and mathematics because much scientific investigation now involves computing as well as theory and experiment. However, limited educational materials exist in this field. "Introduction to Computational Science" fills this void with a flexible, readable textbook that assumes only a background in high school algebra and enables instructors to follow tailored pathways through the material. It is the first textbook designed specifically for an introductory course in the computational science and engineering curriculum.</p>
+	<p>The text embraces two major approaches to computational science problems: System dynamics models with their global views of major systems that change with time; and cellular automaton simulations with their local views of how individuals affect individuals. While the text is generic, an extensive author-generated Web-site contains tutorials and files in a variety of software packages to accompany the text.Generic software approach in the text Web site with tutorials and files in a variety of software packages Engaging examples, exercises, and projects that explore science Additional, substantial projects for students to develop individually or in teams Consistent application of the modeling process Quick review questions and answers Projects for students to develop individually or in teams Reference sections for most modules, as well as a glossary Online instructor's manual with a test bank and solutions.</p>
+       </td>
+      </tr>
+      <tr>
+       <td class="booksinfodetailstd" colspan="2">
+       <span class="booksbold">Product Details:</span><br />
+       ISBN: 9780691125657<br />
+       ISBN-10: 0691125651<br />
+       Audience: Tertiary; University or College<br />
+       Format: Hardcover<br />
+       Language: English<br /> 
+       Number Of Pages: 656<br />
+       Published: 2nd May 2006<br />
+       Publisher: Princeton University Press<br /> 
+       Country of Publication: US<br />
+       Dimensions (cm): 26.3 x 18.5  x 3.7<br />
+       Weight (kg): 1.169<br />
+       <p>
+       This product is categorised by:<br />
+       &nbsp;&nbsp;&nbsp;Non-Fiction  »  Computing & I.T.  »  Computer Science  »  Mathematical Theory of Computation  »  Maths for Computer Scientists<br />
+       &nbsp;&nbsp;&nbsp;Non-Fiction  »  Computing & I.T.  »  Graphical & Digital Media Applications  »  3D Graphics & Modelling<br />
+       &nbsp;&nbsp;&nbsp;Non-Fiction  »  Mathematics  »  Applied Mathematics<br />
+       &nbsp;&nbsp;&nbsp;Non-Fiction  »  Science  »  Science in General<br />
+       &nbsp;&nbsp;&nbsp;Text Books  »  Higher Education & Vocational Textbooks  »  Computing & Programming<br />
+       </p>
+       </td>
+      </tr>
+      <tr>
+       <td class="booksanchor" colspan="2"><a href="#top">top</a> <!-- Link to top of page -->
+      </tr>
+     </table>
+     </td>
+    </tr>						
+   </table>
+  </div>
+ </div>
+ <div id="footer"> <!-- Footer container -->
+©Deakin University, School of Information Technology.<br /> This web page has been developed as a student assignment for the unit SIT104: Introduction to Web Development.<br />Therefore it is not part of the University's authorised web site. DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN ANY WAY.
+ </div>
+</div>
+
+</body>
+</html>
